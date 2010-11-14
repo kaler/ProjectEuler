@@ -1,0 +1,211 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4ED7F0B7128F428C003B5F41 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4ED7F0B6128F428C003B5F41 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4ED7F0B0128F428B003B5F41 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4ED7F0B2128F428B003B5F41 /* ProjectEuler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProjectEuler; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED7F0B5128F428C003B5F41 /* ProjectEuler.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ProjectEuler.1; sourceTree = "<group>"; };
+		4ED7F0B6128F428C003B5F41 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4ED7F0AF128F428B003B5F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4ED7F0A5128F428B003B5F41 = {
+			isa = PBXGroup;
+			children = (
+				4ED7F0AC128F428B003B5F41 /* Source */,
+				4ED7F0AD128F428B003B5F41 /* Documentation */,
+				4ED7F0B3128F428B003B5F41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4ED7F0AC128F428B003B5F41 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4ED7F0B6128F428C003B5F41 /* main.cpp */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4ED7F0AD128F428B003B5F41 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				4ED7F0B5128F428C003B5F41 /* ProjectEuler.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		4ED7F0B3128F428B003B5F41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ED7F0B2128F428B003B5F41 /* ProjectEuler */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4ED7F0B1128F428B003B5F41 /* ProjectEuler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED7F0BA128F428C003B5F41 /* Build configuration list for PBXNativeTarget "ProjectEuler" */;
+			buildPhases = (
+				4ED7F0AE128F428B003B5F41 /* Sources */,
+				4ED7F0AF128F428B003B5F41 /* Frameworks */,
+				4ED7F0B0128F428B003B5F41 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProjectEuler;
+			productName = ProjectEuler;
+			productReference = 4ED7F0B2128F428B003B5F41 /* ProjectEuler */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4ED7F0A7128F428B003B5F41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Smartful Studios Inc.";
+			};
+			buildConfigurationList = 4ED7F0AA128F428B003B5F41 /* Build configuration list for PBXProject "ProjectEuler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4ED7F0A5128F428B003B5F41;
+			productRefGroup = 4ED7F0B3128F428B003B5F41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4ED7F0B1128F428B003B5F41 /* ProjectEuler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4ED7F0AE128F428B003B5F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED7F0B7128F428C003B5F41 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4ED7F0B8128F428C003B5F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4ED7F0B9128F428C003B5F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4ED7F0BB128F428C003B5F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4ED7F0BC128F428C003B5F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4ED7F0AA128F428B003B5F41 /* Build configuration list for PBXProject "ProjectEuler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED7F0B8128F428C003B5F41 /* Debug */,
+				4ED7F0B9128F428C003B5F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ED7F0BA128F428C003B5F41 /* Build configuration list for PBXNativeTarget "ProjectEuler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED7F0BB128F428C003B5F41 /* Debug */,
+				4ED7F0BC128F428C003B5F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4ED7F0A7128F428B003B5F41 /* Project object */;
+}
