@@ -199,6 +199,35 @@ int problem6()
   return sumSquare - squareSum;
 }
 
+// By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+//
+// What is the 10001st prime number?
+int problem7()
+{
+  int prime = 2;
+  int counter = 1;
+  
+  while (counter < 10001)
+  {
+    ++prime;
+    bool isPrime = true;
+
+    for (int i = 2; i < prime; ++i)
+    {
+      if (prime%i == 0)
+      {
+        isPrime = false;
+        break;
+      }
+    }
+    
+    if (isPrime)
+      ++counter;
+  }
+  
+  return prime;
+}
+
 int main (int argc, const char * argv[]) 
 {
   std::cout << "Problem 1: " << problem1() << "\n"
@@ -206,7 +235,9 @@ int main (int argc, const char * argv[])
             << "Problem 3: " << problem3() << "\n"
             << "Problem 4: " << problem4() << "\n"
             << "Problem 5: " << problem5() << "\n"
-            << "Problem 6: " << problem6() << "\n";
+            << "Problem 6: " << problem6() << "\n"
+            << "Problem 7: " << problem7() << "\n";
+
 
 
   return 0;
