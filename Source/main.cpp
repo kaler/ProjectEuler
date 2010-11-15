@@ -6,7 +6,10 @@
 //  Copyright 2010 Smartful Studios Inc. All rights reserved.
 //
 
-#include <iostream>
+#include <cstdlib>
+#include <cstdio>
+#include <cstring>
+#include <ctime>
 
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
 // The sum of these multiples is 23.
@@ -58,7 +61,7 @@ int problem2()
 // The prime factors of 13195 are 5, 7, 13 and 29.
 //
 // What is the largest prime factor of the number 600851475143 ?
-int64_t problem3()
+int problem3()
 {
   int64_t number = 600851475143;
   int64_t factor = 1;
@@ -228,17 +231,23 @@ int problem7()
   return prime;
 }
 
+void run(int number, int (*problem)())
+{
+  clock_t then = clock();
+  int answer = problem();
+  clock_t now = clock();
+  printf("Problem %d: %d \t Time: %f\n", number, answer, float(now-then)/CLOCKS_PER_SEC);
+}
+
 int main (int argc, const char * argv[]) 
 {
-  std::cout << "Problem 1: " << problem1() << "\n"
-            << "Problem 2: " << problem2() << "\n"
-            << "Problem 3: " << problem3() << "\n"
-            << "Problem 4: " << problem4() << "\n"
-            << "Problem 5: " << problem5() << "\n"
-            << "Problem 6: " << problem6() << "\n"
-            << "Problem 7: " << problem7() << "\n";
-
-
+  run(1, problem1);
+  run(2, problem2);
+  run(3, problem3);
+  run(4, problem4);
+  run(5, problem5);
+  run(6, problem6);
+  run(7, problem7);
 
   return 0;
 }
