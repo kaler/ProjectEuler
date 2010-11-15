@@ -7,7 +7,6 @@
 //
 
 #include <iostream>
-#include <vector>
 
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
 // The sum of these multiples is 23.
@@ -59,24 +58,24 @@ int problem2()
 // The prime factors of 13195 are 5, 7, 13 and 29.
 //
 // What is the largest prime factor of the number 600851475143 ?
-int problem3()
+int64_t problem3()
 {
   int64_t number = 600851475143;
-  std::vector<int64_t> factors;
+  int64_t factor = 1;
 
   int64_t i = 2;
   while (number > 1)
   {
     if (number%i == 0)
     {
-      factors.push_back(i);
+      factor = i;
       number = number / i;
     }
     else
       ++i;
   }
   
-  return factors[factors.size()-1];
+  return factor;
 }
 
 // A palindromic number reads the same both ways. The largest palindrome made from the product of 
@@ -151,21 +150,25 @@ int problem5()
   int sequence[length];
   for (int i = 0, j = length; i < length; ++i, --j)
     sequence[i] = j;
-  
-  int n = length;
+
+  bool evenlyDivisible = true;
+  int n = 0;
   do
   {
-    for (int i = 1; i < length; ++i)
-      if (n%sequence[i] != 0)
-        goto next;
-    
-    return n;
-    
-  next:
+    evenlyDivisible = true;
     n += sequence[0];
-  } while (true);
+    
+    for (int i = 1; i < length; ++i)
+    {
+      if (n%sequence[i] != 0)
+      {
+        evenlyDivisible = false;
+        break;
+      }
+    }
+  } while (!evenlyDivisible);
   
-  return 0;
+  return n;
 }
 
 int main (int argc, const char * argv[]) 
