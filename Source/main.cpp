@@ -171,13 +171,43 @@ int problem5()
   return n;
 }
 
+// The sum of the squares of the first ten natural numbers is,
+// 
+// 1^2 + 2^2 + ... + 10^2 = 385
+// The square of the sum of the first ten natural numbers is,
+//
+// (1 + 2 + ... + 10)^2 = 552 = 3025
+// Hence the difference between the sum of the squares of the first ten natural numbers 
+// and the square of the sum is 3025  385 = 2640.
+//
+// Find the difference between the sum of the squares of the first one hundred natural numbers 
+// and the square of the sum.
+int problem6()
+{
+  int length = 100;
+
+  int squareSum = 0;
+  for (int i = 1; i <= length; ++i)
+    squareSum += i*i;
+  
+  int sumSquare = 0;
+  for (int i = 0; i <= length; ++i)
+    sumSquare += i;
+  
+  sumSquare = sumSquare * sumSquare;
+  
+  return sumSquare - squareSum;
+}
+
 int main (int argc, const char * argv[]) 
 {
   std::cout << "Problem 1: " << problem1() << "\n"
             << "Problem 2: " << problem2() << "\n"
             << "Problem 3: " << problem3() << "\n"
             << "Problem 4: " << problem4() << "\n"
-            << "Problem 5: " << problem5() << "\n";
+            << "Problem 5: " << problem5() << "\n"
+            << "Problem 6: " << problem6() << "\n";
+
 
   return 0;
 }
